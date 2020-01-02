@@ -1,0 +1,18 @@
+sns:
+  label: 社交资料
+  items:
+    github:
+      name: github
+      label: Github
+      type: text
+      placeholder: '只需填入 Github 用户名即可'
+    email:
+      name: email
+      label: 邮箱
+      type: text
+      placeholder: ''
+    sign:
+      name: sign
+      label: 签名
+      type: textarea
+      placeholder: ''
