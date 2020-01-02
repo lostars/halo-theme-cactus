@@ -6,9 +6,10 @@
 
 原主题地址：[https://github.com/probberechts/hexo-theme-cactus](https://github.com/probberechts/hexo-theme-cactus)
 ## 预览
+![](screenshot.png)
 
 ## 使用方法
 
-1. 克隆或者[下载]()。
+1. 克隆或者[下载](https://github.com/Lostars/halo-theme-cactus)。
 2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用。
 
