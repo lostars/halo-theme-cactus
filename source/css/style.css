@@ -627,7 +627,7 @@ body {
 #header #nav ul li {
   display: inline-block;
   margin-right: 15px;
-  border-right: 1px dotted;
+  border-right: 1px solid;
   border-color: #d44375;
   vertical-align: middle;
 }
@@ -767,7 +767,7 @@ body {
   background-repeat: repeat-x;
 }
 #header-post #nav ul li {
-  border-right: 1px dotted #d44375;
+  border-right: 1px solid #d44375;
 }
 #header-post #nav ul li:last-child {
   margin-right: 0;
