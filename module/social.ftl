@@ -10,22 +10,20 @@
                 <i class="fab fa-github"></i>
             </a>
         </#if>
+        <#if settings.twitch??>
+            <a class="icon" target="_blank" rel="noopener" href="https://www.twitch.tv/${settings.twitch}">
+                <i class="fab fa-twitch"></i>
+            </a>
+        </#if>
+        <#if settings.spotify??>
+            <a class="icon" target="_blank" rel="noopener" href="https://open.spotify.com/user/${settings.spotify}">
+                <i class="fab fa-spotify"></i>
+            </a>
+        </#if>
         <#if settings.email??>
             <a class="icon" target="_blank" rel="noopener" href="mailto:${settings.email}">
                 <i class="fas fa-envelope"></i>
             </a>
         </#if>
-<#--        <a class="icon" target="_blank" rel="noopener" href="/hexo-theme-cactus/cactus-light/public/">-->
-<#--            <i class="fab fa-twitter"></i>-->
-<#--        </a>-->
-<#--        <a class="icon" target="_blank" rel="noopener" href="/hexo-theme-cactus/cactus-light/public/">-->
-<#--            <i class="fab fa-facebook"></i>-->
-<#--        </a>-->
-<#--        <a class="icon" target="_blank" rel="noopener" href="/hexo-theme-cactus/cactus-light/public/">-->
-<#--            <i class="fab fa-linkedin"></i>-->
-<#--        </a>-->
-<#--        <a class="icon" target="_blank" rel="noopener" href="mailto:name@email.com">-->
-<#--            <i class="fas fa-envelope"></i>-->
-<#--        </a>-->
     </p>
 </section>

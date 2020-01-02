@@ -48,10 +48,10 @@
                 <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
                 <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
             </ul>
-            <span id="i-prev" class="info" style="display:none;">Previous post</span>
-            <span id="i-next" class="info" style="display:none;">Next post</span>
-            <span id="i-top" class="info" style="display:none;">Back to top</span>
-            <span id="i-share" class="info" style="display:none;">Share post</span>
+            <span id="i-prev" class="info" style="display:none;">Previous</span>
+            <span id="i-next" class="info" style="display:none;">Next</span>
+            <span id="i-top" class="info" style="display:none;">Top</span>
+            <span id="i-share" class="info" style="display:none;">Share</span>
         </span>
         <br/>
         <div id="share" style="display: none">

@@ -6,6 +6,16 @@ sns:
       label: Github
       type: text
       placeholder: '只需填入 Github 用户名即可'
+    twitch:
+      name: twitch
+      label: twitch
+      type: text
+      placeholder: '只需填入 twitch 用户名即可'
+    spotify:
+      name: spotify
+      label: spotify
+      type: text
+      placeholder: '只需填入 spotify 用户名即可'
     email:
       name: email
       label: 邮箱
