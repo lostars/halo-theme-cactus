@@ -5,6 +5,8 @@
 该主题的原作者为 [Pieter Robberechts](https://people.cs.kuleuven.be/~pieter.robberechts/)，非常感谢做出这么优秀的主题。
 
 原主题地址：[https://github.com/probberechts/hexo-theme-cactus](https://github.com/probberechts/hexo-theme-cactus)
+## 预览
+![](screenshot.png)
 
 ## 使用方法
 
