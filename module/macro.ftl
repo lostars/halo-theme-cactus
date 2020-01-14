@@ -139,7 +139,9 @@
 <#macro header>
     <header id="header">
         <a href="/">
-            <div id="logo" style="background-image: url(${static!}/source/images/logo.png);"></div>
+            <#if options.blog_logo!>
+                <div id="logo" style="background-image: url(${options.blog_logo!});"></div>
+            </#if>
             <div id="title">
                 <h1>${options.blog_title!}</h1>
             </div>
