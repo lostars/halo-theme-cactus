@@ -139,7 +139,7 @@
 <#macro header>
     <header id="header">
         <a href="/">
-            <#if options.blog_logo!>
+            <#if options.blog_logo??>
                 <div id="logo" style="background-image: url(${options.blog_logo!});"></div>
             </#if>
             <div id="title">
