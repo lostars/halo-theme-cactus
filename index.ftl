@@ -3,7 +3,7 @@
 <@header></@header>
 <#include "module/social.ftl">
 <section id="writing">
-    <span class="h1"><a href="/${archives_url!}">Memories</a></span>
+    <span class="h1"><a href="${archives_url!}">Memories</a></span>
     <#include "module/post_entry.ftl">
     <#include "module/pagination.ftl">
 </section>

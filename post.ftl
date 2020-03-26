@@ -14,7 +14,7 @@
                 <div class="article-tag">
                     <#list tags as tag>
                         <i class="fas fa-tag"></i>
-                        <a class="tag-link" href="${tag.fullPath!}">${tag.name}</a>&nbsp;
+                        <a class="tag-link" href="${tag.fullPath.replace(".html", "")!}">${tag.name}</a>&nbsp;
                     </#list>
                 </div>
             </#if>
