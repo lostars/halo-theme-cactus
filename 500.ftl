@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@head title="SERVICE UNAVAILABLE" keywords="${options.seo_keywords!},${tagWords!}" description=""></@head>
+<@head title="SERVICE UNAVAILABLE" keywords="${meta_keywords!}" description="${meta_description!}"></@head>
 <h1>
     500
 </h1>

@@ -8,17 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="${description!}">
-    <meta name="keywords" content="${keywords!}"/>
+    <meta name="description" content="${meta_description!}">
+    <meta name="keywords" content="${meta_keywords!}"/>
     <link rel="shortcut icon" href="">
     <link rel="icon" type="image/png" href="" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <!-- title -->
     <title>${title!}</title>
     <!-- styles -->
-    <link rel="stylesheet" href="${static!}/source/css/style.css">
+    <link rel="stylesheet" href="${theme_base!}/source/css/style.css">
     <!-- persian styles -->
-    <link rel="stylesheet" href="${static!}/source/css/rtl.css">
+    <link rel="stylesheet" href="${theme_base!}/source/css/rtl.css">
     <!-- rss -->
 </head>
 <body class="max-width mx-auto px3 ltr">
@@ -39,11 +39,11 @@
         <br/>
         <span id="actions">
             <ul>
-                <#if prePost??>
-                    <li><a class="icon" href="${context!}/archives/${prePost.url}"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+                <#if prevPost??>
+                    <li><a class="icon" href="${prevPost.fullPath!}"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
                 </#if>
                 <#if nextPost??>
-                    <li><a class="icon" href="${context!}/archives/${nextPost.url}"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+                    <li><a class="icon" href="${nextPost.fullPath!}"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
                 </#if>
                 <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
                 <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -66,10 +66,10 @@
 </#macro>
 <#macro share>
     <ul>
-        <li><a class="icon" href="https://twitter.com/share?url=${context!}/archives/${post.url}"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-        <li><a class="icon" href="https://www.facebook.com/sharer.php?u=${context!}/archives/${post.url}"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-        <li><a class="icon" href="https://reddit.com/submit?url=${context!}/archives/${post.url}"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-        <li><a class="icon" href="https://www.tumblr.com/share/link?url=${context!}/archives/${post.url}"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=${post.fullPath!}"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://www.facebook.com/sharer.php?u=${post.fullPath!}"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://reddit.com/submit?url=${post.fullPath!}"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://www.tumblr.com/share/link?url=${post.fullPath!}"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
     </ul>
 </#macro>
 <#macro footer>
@@ -81,21 +81,21 @@
 </div>
 </div>
 <!-- styles -->
-<link rel="stylesheet" href="${static!}/source/plugins/font-awesome/css/all.min.css">
-<link rel="stylesheet" href="${static!}/source/plugins/justified-gallery/css/justifiedGallery.min.css">
+<link rel="stylesheet" href="${theme_base!}/source/plugins/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="${theme_base!}/source/plugins/justified-gallery/css/justifiedGallery.min.css">
 <!-- jquery -->
-<script src="${static!}/source/plugins/jquery/jquery.min.js"></script>
-<script src="${static!}/source/plugins/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
-<script src="${static!}/source/js/main.js"></script>
+<script src="${theme_base!}/source/plugins/jquery/jquery.min.js"></script>
+<script src="${theme_base!}/source/plugins/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="${theme_base!}/source/js/main.js"></script>
 <!-- code-prettify -->
-<link rel="stylesheet" href="${static!}/source/plugins/google-code-prettify/skins/github-v2-custom.css">
+<link rel="stylesheet" href="${theme_base!}/source/plugins/google-code-prettify/skins/github-v2-custom.css">
 <script type="text/javascript">
     $(document).ready(function(){
         $("pre,code").addClass("prettyprint linenums");
         prettyPrint();
     });
 </script>
-<script src="${static!}/source/plugins/google-code-prettify/prettify.js"></script>
+<script src="${theme_base!}/source/plugins/google-code-prettify/prettify.js"></script>
 
 <!-- toc generate -->
 <#if is_post??>
@@ -139,11 +139,11 @@
 <#macro header>
     <header id="header">
         <a href="/">
-            <#if options.blog_logo??>
-                <div id="logo" style="background-image: url(${options.blog_logo!});"></div>
+            <#if blog_logo??>
+                <div id="logo" style="background-image: url(${blog_logo!});"></div>
             </#if>
             <div id="title">
-                <h1>${options.blog_title!}</h1>
+                <h1>${blog_title!}</h1>
             </div>
         </a>
         <div id="nav">

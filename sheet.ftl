@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@head title="${post.title!} · ${options.blog_title!}" keywords="${post.title!},${options.seo_keywords!}" description="${post.summary!}"></@head>
+<@head title="${post.title!} · ${blog_title!}" keywords="${post.title!},${meta_keywords!}" description="${post.summary!}"></@head>
 <@header></@header>
 <article class="post" itemscope>
     <div class="content" itemprop="articleBody">

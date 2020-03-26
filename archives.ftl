@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@head title="归档 · ${options.blog_title!}" keywords="文章归档,${options.seo_keywords!}" description="${options.seo_description!}"></@head>
+<@head title="归档 · ${blog_title!}" keywords="文章归档,${meta_keywords!}" description="${meta_description!}"></@head>
 <@header></@header>
 <div id="archive">
     <ul class="post-list">
@@ -12,7 +12,7 @@
                             <time datetime="${post.createTime}" itemprop="datePublished">${post.createTime?string("yyyy-MM-dd")}</time>
                         </div>
                         <span>
-                            <a class="" href="${context!}/archives/${post.url!}">${post.title!}</a>
+                            <a class="" href="${post.fullPath!}">${post.title!}</a>
                         </span>
                     </li>
                 </#list>

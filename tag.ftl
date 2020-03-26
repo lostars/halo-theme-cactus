@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@head title="标签：${tag.name} · ${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}"></@head>
+<@head title="标签：${tag.name} · ${blog_title!}" keywords="${meta_keywords!}" description="${meta_description!}"></@head>
 <@header></@header>
 <div id="tag">
     <#include "module/post_entry.ftl">

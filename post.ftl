@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@head title="${post.title!} · ${options.blog_title!}" keywords="${post.title!},${options.seo_keywords!},${tagWords!}" description="${post.summary!}"></@head>
+<@head title="${post.title!} · ${blog_title!}" keywords="${post.title!},${meta_keywords!},${tagWords!}" description="${post.summary!}"></@head>
 <article class="post" itemscope="">
     <header>
         <h1 class="posttitle" itemprop="name headline">${post.title}</h1>
@@ -14,7 +14,7 @@
                 <div class="article-tag">
                     <#list tags as tag>
                         <i class="fas fa-tag"></i>
-                        <a class="tag-link" href="${context!}/tags/${tag.slugName}">${tag.name}</a>&nbsp;
+                        <a class="tag-link" href="${tag.fullPath!}">${tag.name}</a>&nbsp;
                     </#list>
                 </div>
             </#if>

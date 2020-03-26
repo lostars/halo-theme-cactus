@@ -5,7 +5,7 @@
                 <time datetime="${post.createTime}" itemprop="datePublished">${post.createTime?string("yyyy-MM-dd")}</time>
             </div>
             <span>
-                <a class="" href="${context!}/archives/${post.url}">${post.title}</a>
+                <a class="" href="${post.fullPath!}">${post.title}</a>
             </span>
         </li>
     </#list>
