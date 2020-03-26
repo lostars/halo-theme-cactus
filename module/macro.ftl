@@ -91,8 +91,16 @@
 <link rel="stylesheet" href="${theme_base!}/source/plugins/google-code-prettify/skins/github-v2-custom.css">
 <script type="text/javascript">
     $(document).ready(function(){
-        $("pre").addClass("prettyprint linenums");
+        $('pre').each(function() {
+            var el = $(this).find('code');
+            var code = el.html();
+            var lang = el.attr('class');
+            if (lang) {
+                $(this).addClass('prettyprint linenums').html(code);
+            }
+        });
         prettyPrint();
+        $("code").addClass("prettyprint linenums");
     });
 </script>
 <script src="${theme_base!}/source/plugins/google-code-prettify/prettify.js"></script>
