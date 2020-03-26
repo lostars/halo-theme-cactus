@@ -91,7 +91,7 @@
 <link rel="stylesheet" href="${theme_base!}/source/plugins/google-code-prettify/skins/github-v2-custom.css">
 <script type="text/javascript">
     $(document).ready(function(){
-        $("pre,code").addClass("prettyprint linenums");
+        $("pre").addClass("prettyprint linenums");
         prettyPrint();
     });
 </script>
