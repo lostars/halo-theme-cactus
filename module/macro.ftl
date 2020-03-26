@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="${meta_description!}">
-    <meta name="keywords" content="${meta_keywords!}"/>
+    <meta name="description" content="${description!}">
+    <meta name="keywords" content="${keywords!}"/>
     <link rel="shortcut icon" href="">
     <link rel="icon" type="image/png" href="" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="">
