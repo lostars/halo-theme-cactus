@@ -147,7 +147,7 @@
 <#macro header>
     <header id="header">
         <a href="/">
-            <#if blog_logo??>
+            <#if blog_logo != ''>
                 <div id="logo" style="background-image: url(${blog_logo!});"></div>
             </#if>
             <div id="title">
