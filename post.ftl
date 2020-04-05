@@ -23,6 +23,10 @@
 
     <div class="content" itemprop="articleBody">
         ${post.formatContent!}
+
+        <blockquote>
+            <p>版权所有丨转载请注明出处：${post.fullPath}</p>
+        </blockquote>
     </div>
     <#include "module/comment.ftl">
     <@comment post=post type="post" />
