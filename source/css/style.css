@@ -487,7 +487,6 @@ body {
 .content a {
   color: #363533;
   text-decoration: none;
-  background-image: linear-gradient(transparent, transparent 5px, #363533 5px, #363533);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
