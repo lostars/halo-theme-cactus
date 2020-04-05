@@ -146,14 +146,6 @@
 </#macro>
 <#macro header>
     <header id="header">
-        <a href="/">
-            <#if blog_logo != ''>
-                <div id="logo" style="background-image: url(${blog_logo!});"></div>
-            </#if>
-            <div id="title">
-                <h1>${blog_title!}</h1>
-            </div>
-        </a>
         <div id="nav">
             <@nav></@nav>
         </div>
