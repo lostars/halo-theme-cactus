@@ -1,6 +1,6 @@
 <ul class="post-list">
     <#if settings.category??>
-        <@postTag method="listByCategoryId" categoryId="${settings.category}">
+        <@postTag method="listByCategoryId" categoryId="2">
             <#list posts.content as post>
                 <li class="post-item">
                     <div class="meta">
