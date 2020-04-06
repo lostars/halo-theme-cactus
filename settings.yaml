@@ -26,3 +26,11 @@ sns:
       label: 签名
       type: textarea
       placeholder: ''
+home:
+  label: 首页文章分类展示配置
+  items:
+    category:
+      name: category
+      label: 分类
+      type: text
+      placeholder: '填入分类id即可'
