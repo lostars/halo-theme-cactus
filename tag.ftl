@@ -9,7 +9,7 @@
                 <#if pagination.hasPrev>
                     <a href="${pagination.prevPageFullPath!}"><i class="fas fa-angle-left"></i></a>
                 </#if>
-                <span class="page-number">Page ${posts.number} of ${posts.totalPages}</span>
+                <span class="page-number">Page ${posts.number + 1} of ${posts.totalPages}</span>
                 <#if pagination.hasNext>
                     <a href="${pagination.nextPageFullPath!}"><i class="fas fa-angle-right"></i></a>
                 </#if>
