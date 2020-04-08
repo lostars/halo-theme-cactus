@@ -6,7 +6,7 @@
     <span class="h1"><a href="${archives_url!}">Memories</a></span>
     <#include "module/post_entry.ftl">
     <#if posts.totalPages gt 1>
-        <@paginationTag method="tagPosts" page="${posts.number}" total="${posts.totalPages}" display="3">
+        <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3">
             <div class="pagination">
                 <#if pagination.hasPrev>
                     <a href="${pagination.prevPageFullPath?replace(".html", "")}"><i class="fas fa-angle-left"></i></a>
