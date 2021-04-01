@@ -21,6 +21,11 @@ sns:
       label: 邮箱
       type: text
       placeholder: ''
+    indexCategory:
+      name: category
+      label: 分类
+      type: text
+      placeholder: '首页展示分类'
     sign:
       name: sign
       label: 签名
