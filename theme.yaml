@@ -8,3 +8,4 @@ logo:
 website: https://github.com/lostars/halo-theme-cactus
 repo: https://github.com/lostars/halo-theme-cactus
 version: 1.0
+require: 1.3.0
