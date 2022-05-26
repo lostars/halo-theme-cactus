@@ -122,7 +122,7 @@
                     break;
                 }
                 if (tagName == 'H3') {
-                    $(this).attr('id', h3.text());
+                    h3.attr('id', h3.text());
                     liList += `<li class="toc-item toc-level-3"><a class="toc-link" href="#`
                         + h3.text() + `"><span class="toc-text">`+ h3.text() +`</span></a></li>`;
                 }
